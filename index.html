@@ -204,11 +204,14 @@ body {
 /* SVG esterno */
 .icon-svg {
   opacity: 0.7;
+  filter: brightness(0) saturate(100%) invert(70%) sepia(6%) saturate(300%) hue-rotate(180deg);
+  transition: 0.2s;
 }
 
 /* Hover */
 .footer a:hover .icon-svg {
   opacity: 1;
+  filter: brightness(0) saturate(100%) invert(0%);
 }
 
 </style>
