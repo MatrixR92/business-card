@@ -8,6 +8,9 @@
 <meta name="theme-color" content="#131722">
 <meta name="format-detection" content="telephone=no">
 
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
 
 <title>Marco Ciman</title>
 
@@ -44,6 +47,23 @@ body {
     #131722 50%,
     #0f131a 100%
   );
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+
+  background: linear-gradient(
+    to bottom,
+    #1c2230 0%,
+    rgba(28,34,48,0.8) 60%,
+    transparent 100%
+  );
+
+  pointer-events: none;
 }
 
 /* ✅ PAGE */
