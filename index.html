@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#131722">
+
+
 <title>Marco Ciman</title>
 
 <style>
@@ -28,8 +32,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
 
-  /* QUESTO RISOLVE TUTTO */
-  min-height: 120vh;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+
+  min-height: 120vh; /* il tuo fix per evitare taglio */
 
   background: radial-gradient(
     circle at top,
